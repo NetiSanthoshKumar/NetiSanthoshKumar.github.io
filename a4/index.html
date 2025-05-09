@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook Sign Up</title>
 </head>
 <body>
-    <h1 >Facebook</h1>
-    <h2> Create a new account </h2>
-    <form>
-        <input type="text" placeholder="First name"> <input type="text" placeholder="Surname"><br>
-        D O B: <input type="date"><br><br>
-        Gender:<input type="radio" name="Female">Female<input type="radio" name="Male">Male<input type="radio" name="custom">Custom<br><br>
-        <input type="email" placeholder="enter your email"><br>
-        <input type="password" placeholder="enter password"><br>
-        <button> Sign up</button>
+    <h1 style="background-color: aqua;"><b>facebook</b></h1>
+    <h2>Create a new account</h2>
+    <p>It's quick and easy.</p>
+
+    <form >
+        <input type="text" name="first_name" placeholder="First name"><br><br>
+        <input type="text" name="surname" placeholder="Surname"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob">
+
+    </br>
+</br>
+
+</br>
+
+
+    Gender:<br>
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="custom"> Custom<br><br>
+
+        <input type="text" name="email_or_phone" placeholder="Mobile number or email address"><br><br>
+        <input type="password" name="password" placeholder="New password"><br><br>
+
+        <button type="submit">Sign Up</button>
     </form>
 </body>
 </html>
