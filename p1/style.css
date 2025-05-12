@@ -59,7 +59,7 @@ header a{
     font-size: 30px;
 }
 
-.boxfirst{
+.boxfirst:hover{
     display: flex;
     border-radius: 10px;
     margin: 10px;
