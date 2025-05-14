@@ -1,7 +1,47 @@
-h1{
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    border-radius: 0%;
+    background-color: antiquewhite;
     color: blue;
-    font-weight: bolder;
-    font-family: 'Courier New', Courier, monospace ;
+    box-shadow: inset;
     text-align: center;
+    transition:transition cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+main{
+    text-align: center;
+    background-color: aqua;
+}
+#sec1{
+    list-style-position: inside;
+    text-align: center;
+    border: 40px;
+    background-origin: padding-box;
+}
+#sec2{
+    list-style-position: inside;
+    text-align: center;
+}
+hr{
+    color:black;
+}
+ol li:hover {
+    transform: translateX(5px);
+    font-size: larger;
+    color: brown;
+    list-style-position: inside;
+}
+ol li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+}
+header:hover{
+    transition: transform 1s;
+}
+.div1{
+    border: 4px;
+    border-radius: 2px;
+    background-size: auto;
     background-color: aliceblue;
 }
