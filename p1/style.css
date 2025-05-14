@@ -95,3 +95,10 @@ a{
     align-items: center;
     text-align: center;
 }
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 26px;
+    color: azure;
+    font-size: large;
+}
