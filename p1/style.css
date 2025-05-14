@@ -67,6 +67,7 @@ header a{
     justify-content: center;
     padding: auto;
     border-radius: 15px;
+    transition: transform 0.2s ease;
 
 }
 .project-container{
@@ -87,6 +88,7 @@ header a{
     border-color: black;
     flex-wrap: wrap;
     padding: 50px;
+    transition: transform 0.2s ease;
 }
 h2{
     text-align: center;
@@ -102,4 +104,8 @@ footer{
     color: azure;
     font-size: large;
     border-radius: 10px;
+}
+.project-card:hover{
+     transition: transform 1s;
+     border: 1px solid black;
 }
