@@ -2,6 +2,9 @@
     margin: 0;
 }
 
+body{
+    animation: fadeIn 0.8s ease-in-out;
+}
 .container {
     width: 100%;
     margin: auto
@@ -13,6 +16,7 @@ header {
     background-color: orange;
     color: white;
     padding: 10px;
+    box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
 }
 
 header li {
@@ -58,15 +62,35 @@ header a{
 .title {
     font-size: 30px;
 }
+#Projects{
+    background-color: chartreuse;
+    justify-content: center;
+    padding: auto;
+    border-radius: 15px;
 
-.boxfirst:hover{
-    display: flex;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 0%;
-    background-color: aliceblue;
 }
-.rowfirst{
+.project-container{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
+    margin: 18x;
+    flex-wrap: wrap;
+    border-color: black;
+}
+.projects-heading{
+    text-align: center;
+}
+.project-card{
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 0.1px solid black;
+    margin: 68px;
+    border-color: black;
+    flex-wrap: wrap;
+}
+h2{
+    text-align: center;
+}
+a{
+    align-items: center;
+    text-align: center;
 }
