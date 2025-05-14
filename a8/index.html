@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1> Assignment 8</h1>
-    <input type="number" placeholder="Enter a Number" id="first"><br><br>
-    <input type="number" placeholder="Enter Second Number" id="second"><br><br>
-    <br>
-    <button onclick="add()">+</button> 
-    <button onclick="sub()">-</button>
-    <button onclick="mul()">X</button>
-    <button onclick="div()">/</button>
-    <hr><br>
-    <p id="output1"></p>
-    <p id="output2"></p>
-    <p id="output3"></p>
-    <p id="output4"></p>
-<script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Temp 18</h1>
+    <h2>Calculator</h2>
+    <div class="row">
+      <div>
+        <p><input type="number" id="n1" /></p>
+        <p><input type="number" id="n2" /></p>
+        <button onclick="calc('add')">+</button>
+        <button onclick="calc('subtract')">-</button>
+        <button onclick="calc('multiply')">x</button>
+        <button onclick="calc('divide')">÷</button>
+      </div>
+      <hr>
+      <div id="resultDiv"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

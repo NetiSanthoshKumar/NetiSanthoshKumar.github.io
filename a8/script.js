@@ -1,24 +1,34 @@
-function add(){
-    let num1 = parseFloat(document.getElementById("first").value);
-    let num2 = parseFloat(document.getElementById("second").value);
-    document.getElementById("output1").innerHTML="Addition : "+(num1 + num2);
+const add = (a, b) => {
+  return a + b;
+};
 
-}
-function sub(){
-    let num1 = parseFloat(document.getElementById("first").value);
-    let num2 = parseFloat(document.getElementById("second").value);
-    document.getElementById("output2").innerHTML="Subtraction : "+(num1 - num2);
+const subtract = (a, b) => {
+  return a - b;
+};
 
-}
-function mul(){
-    let num1 = parseFloat(document.getElementById("first").value);
-    let num2 = parseFloat(document.getElementById("second").value);
-    document.getElementById("output3").innerHTML="Multiplication : "+(num1 * num2);
+const multiply = (a, b) => {
+  return a * b;
+};
 
-}
-function div(){
-    let num1 = parseFloat(document.getElementById("first").value);
-    let num2 = parseFloat(document.getElementById("second").value);
-    document.getElementById("output4").innerHTML="Division : "+(num1 / num2);
+const divide = (a, b) => {
+  return a / b;
+};
 
-}
+const calc = (op) => {
+  let n1 = parseFloat(document.getElementById("n1").value);
+  let n2 = parseFloat(document.getElementById("n2").value);
+  switch (op) {
+    case "add":
+      resultDiv.innerHTML = "Addition: " + add(n1, n2);
+      break;
+    case "subtract":
+      resultDiv.innerHTML = "Subtraction: " + subtract(n1, n2);
+      break;
+    case "multiply":
+      resultDiv.innerHTML = "Multiplication: " + multiply(n1, n2);
+      break;
+    case "divide":
+      resultDiv.innerHTML = "Division: " + divide(n1, n2);
+      break;
+  }
+};
