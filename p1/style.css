@@ -86,6 +86,7 @@ header a{
     margin: 68px;
     border-color: black;
     flex-wrap: wrap;
+    padding: 50px;
 }
 h2{
     text-align: center;
