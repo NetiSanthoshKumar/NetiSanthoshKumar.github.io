@@ -9,9 +9,9 @@ function searchitem() {
 
   if (filtered.length > 0) {
     filtered.forEach(fruit => {
-      const div = document.createElement('p');
+      const div = document.createElement('div');
       div.textContent = fruit;
-      fruitList.appendChild(p);
+      fruitList.appendChild(div);
     });
   } else {
     fruitList.innerHTML = '<div>No fruits found</div>';
