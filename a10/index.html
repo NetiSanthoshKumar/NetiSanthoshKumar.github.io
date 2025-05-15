@@ -65,6 +65,10 @@
         products.push(obj)
         dispProducts()
       }
+        function deleteProduct(id) {
+      products = products.filter(product => product.id !== id);
+      dispproducts();
+    }
 
       function dispProducts() {
         let str = "";
@@ -73,7 +77,7 @@
                 <img src=${value.imgUrl}/>
                 <h2>${value.name}</h2>
                 <h3>${value.price}</h3>
-                <button>Add to Cart</button>
+                <button>Add to Cart</button><button onclick="deleteProduct(${value.id})> Delete</button>
                 </div>`;
         });
         container.innerHTML = str;
