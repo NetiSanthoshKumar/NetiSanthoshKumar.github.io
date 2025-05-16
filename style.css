@@ -2,11 +2,12 @@ header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 10px;
     border-radius: 0%;
-    background-color: antiquewhite;
-    color: blue;
+    background-color: rgb(240, 237, 234);
+    color: rgb(3, 3, 18);
     box-shadow: inset;
     text-align: center;
     transition:transition cubic-bezier(0.165, 0.84, 0.44, 1)
+    required;
 }
 main{
     text-align: center;
@@ -37,7 +38,7 @@ ol li {
     transition: transform 0.2s ease;
 }
 header:hover{
-    transition: transform 1s;
+    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .div1{
     border: 4px;
