@@ -9,5 +9,4 @@ const products = [
         id: 3,name :"product 3",price:750
     }
 ];
-const pro =products.map((value) => value.price + 5);
-products.forEach((product) => console.log(product.name+""+pro));
+products.forEach((product) => console.log(product.name+"  "+((product.price )+ 5)));
