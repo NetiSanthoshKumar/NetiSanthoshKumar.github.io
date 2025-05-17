@@ -1,12 +1,11 @@
-const products = [
-    {
-        id: 1,name :"product 1",price:250
-    },
-    {
-        id: 2,name :"product 2",price:500
-    },
-    {
-        id: 3,name :"product 3",price:750
-    }
+const products=[
+    { id: 1, name: "product1", qty:3, price: 34, status:"pending"},
+    { id : 2, name: "product2", qty:5,  price: 56, status:"pending"},
+    { id : 3, name: "product2", qty:2, price: 43, status:"pending"},
+
 ];
-products.forEach((product) => console.log(product.name+"  "+((product.price )+ 5)));
+//products.foreach((product) => console.log(product.name))
+
+
+const ins = products.map((product)=>({...product,price:product.price+5, status: "completed", total:product.price*product.qty})).filter(product=>product.qty>2);
+console.log(ins);
