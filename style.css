@@ -1,8 +1,8 @@
 header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 10px;
-    border-radius: 0%;
-    background-color: rgb(240, 237, 234);
+    border-radius: 10px;
+    background-color: rgba(157, 185, 175, 0.801);
     color: rgb(3, 3, 18);
     box-shadow: inset;
     text-align: center;
@@ -11,7 +11,9 @@ header{
 }
 main{
     text-align: center;
-    background-color: aqua;
+    background-color: rgba(186, 227, 125, 0.864);
+    border-radius: 10px ;
+
 }
 #sec1{
     list-style-position: inside;
