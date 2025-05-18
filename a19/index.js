@@ -13,7 +13,7 @@ const products = [
 
 const cart= {1:4,3:5}
 
-const order = products
+/*const order = products
   .filter(product => cart[product.id]) 
   .map(product => {
     const quantity = cart[product.id];
@@ -24,3 +24,8 @@ const order = products
 
 const orderValue = order.reduce((sum, val) => sum + val, 0);
 console.log(`Order Value: ${orderValue}`);
+*/
+const total = products.reduce((sum,value)=>{
+    return sum + value.price * (cart[value.id] ?? 0);
+});
+console.log(`Total is: ${total}`);
