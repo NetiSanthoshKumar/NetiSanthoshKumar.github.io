@@ -6,9 +6,9 @@ const customers = [
     let num1 = document.getElementById("num").value;
     let pass1 = document.getElementById("pass").value;
 
-    const customer = customers.find(value => value.card === card && value.pin === pin);
+    const customer = customers.find(value => value.cart === num1 && value.pin === pass1);
     if(customer){
-        document.write("welcome"+customer.name);
+        document.write("welcome" +customer.name);
     }
     else{
         document.write("result not found");
