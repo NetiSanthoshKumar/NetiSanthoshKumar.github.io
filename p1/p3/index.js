@@ -5,8 +5,10 @@ const customers = [
  function showRes(){
     let num1 = document.getElementById("num").value;
     let pass1 = document.getElementById("pass").value;
-    if(customers.cart === num1 && customers.pin === pass1){
-        document.write(customers.name);
+
+    const customer = customers.find(value => value.card === card && value.pin === pin);
+    if(customer){
+        document.write("welcome"+customer.name);
     }
     else{
         document.write("result not found");
