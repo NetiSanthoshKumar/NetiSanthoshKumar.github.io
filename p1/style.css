@@ -17,14 +17,14 @@ header {
     color: white;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
+    position: sticky;
+    top:0%;S
 }
-
 header li {
     display: inline-block;
     font-size: 20px;
     padding: 5px;
 }
-
 header a{
     text-decoration: none;
 }
@@ -62,12 +62,12 @@ header a{
 .title {
     font-size: 30px;
 }
-#Projects{
-    background-color: chartreuse;
+#projects{
     justify-content: center;
     padding: auto;
     border-radius: 15px;
     transition: transform 0.2s ease;
+    background-color: #BED8E3;
 
 }
 .project-container{
@@ -106,6 +106,18 @@ footer{
     border-radius: 10px;
 }
 .project-card:hover{
-     transition: transform 1s;
-     border: 1px solid black;
+    transition: transform 1s;
+    border: 1px solid black;
+}
+#services{
+    background-color: aquamarine;
+    padding: 15px;
+}
+.services-container{
+    display: flex;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
 }
