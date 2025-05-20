@@ -8,7 +8,7 @@ const customers = [
 
     const customer = customers.find(value => value.cart === num1 && value.pin === pass1);
     if(customer){
-        document.write("welcome" +customer.name);
+        document.write("welcome "+customer.name);
     }
     else{
         document.write("result not found");
