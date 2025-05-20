@@ -13,7 +13,7 @@ body{
 header {
     display: flex;
     justify-content: space-between;
-    background-color: orange;
+    background-color: rgb(225, 194, 137);
     color: white;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
@@ -121,7 +121,7 @@ footer{
     border-radius: 10px;
     margin: 20px;
     text-align: center;
-    
+
 }
 .contact-form{
     text-align: center;
