@@ -18,12 +18,12 @@ header {
     padding: 10px;
     box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
     position: sticky;
-    top:0%;S
+    top:0%;
 }
 header li {
     display: inline-block;
     font-size: 20px;
-    padding: 5px;
+    padding:5px;
 }
 header a{
     text-decoration: none;
@@ -112,6 +112,7 @@ footer{
 #services{
     background-color: aquamarine;
     padding: 15px;
+    border-radius: 8px;
 }
 .services-container{
     display: flex;
@@ -120,4 +121,12 @@ footer{
     border-radius: 10px;
     margin: 20px;
     text-align: center;
+    
+}
+.contact-form{
+    text-align: center;
+    font-size: larger;
+}
+.about-container{
+    font-size: larger;
 }
