@@ -5,86 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - N. Santhosh Kumar</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
+    :root {
+      --primary: #009688;
+      --accent: #00796b;
+      --bg: #f0fdfc;
+      --text: #333;
+      --white: #fff;
+      --light-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      color: #333;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     header {
-      background-color: #00796b;
-      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: var(--white);
+      padding: 2rem 1rem;
       text-align: center;
-      padding: 30px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: var(--light-shadow);
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       letter-spacing: 1px;
     }
 
     header h2 {
-      margin: 10px 0 0;
-      font-weight: normal;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-top: 0.5rem;
+      opacity: 0.9;
     }
 
     main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 20px;
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
     }
 
-    h3 {
-      color: #00796b;
-      font-size: 1.6rem;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #00796b;
-      display: inline-block;
+    section {
+      background-color: var(--white);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--light-shadow);
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.3s; }
+    section:nth-of-type(2) { animation-delay: 0.5s; }
+
+    section h3 {
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    section h3::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: var(--primary);
+      margin-top: 8px;
     }
 
     ol {
-      list-style-type: decimal;
-      padding-left: 20px;
+      list-style: decimal inside;
     }
 
     li {
-      margin: 10px 0;
+      margin: 0.6rem 0;
     }
 
     a {
+      color: var(--accent);
+      font-weight: 600;
       text-decoration: none;
-      color: #00695c;
-      font-weight: bold;
-      transition: color 0.3s, background-color 0.3s, padding-left 0.3s;
-      padding: 5px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
       display: inline-block;
     }
 
     a:hover {
+      background-color: var(--primary);
       color: white;
-      background-color: #00695c;
-      border-radius: 5px;
-      padding-left: 10px;
+      transform: translateX(6px);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
 
     hr {
-      margin: 40px 0;
-      border: 0;
-      height: 1px;
-      background: #ccc;
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 3rem 0;
     }
 
-    .section {
-      margin-bottom: 40px;
-    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
 
-    .div1 {
-      margin-bottom: 20px;
+      header h2 {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 1.5rem 1rem;
+      }
+
+      section h3 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -97,21 +148,19 @@
 
   <main>
     <!-- Projects Section -->
-    <section id="sec1" class="section">
-      <h3><u><strong>Projects</strong></u></h3>
-      <ol class="div1">
+    <section id="projects">
+      <h3>Projects</h3>
+      <ol>
         <li><a href="p1/">My Portfolio</a></li>
-        <li><a href="https://react-lessons-amber.vercel.app/"> React-lessons </a></li>
-        <li><a href="https://github.com/NetiSanthoshKumar/mongo-query" target="_blank"> Mongo-query </a></li>
+        <li><a href="https://react-lessons-amber.vercel.app/" target="_blank">React Lessons</a></li>
+        <li><a href="https://github.com/NetiSanthoshKumar/mongo-query" target="_blank">Mongo Query (GitHub)</a></li>
       </ol>
     </section>
 
-    <hr>
-
-    <!-- Assignments Section -->
-    <section id="sec2" class="section">
-      <h3><u><strong>My Assignments</strong></u></h3>
+    <section id="assignments">
+      <h3>My Assignments</h3>
       <ol>
+        <!-- You can dynamically generate these if needed -->
         <li><a href="a1/">Assignment 1</a></li>
         <li><a href="a2/">Assignment 2</a></li>
         <li><a href="a3/">Assignment 3</a></li>
